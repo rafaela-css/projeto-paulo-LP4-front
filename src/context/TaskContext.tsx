@@ -27,7 +27,7 @@ export function TasksProvider({ children }: TaskProviderProps) {
 		return new Promise(() => {
 			Api.get<ITasks[]>("/tasks")
 				.then((resposta: any) => {
-					setTodosOsTasks(resposta.data);
+					setTodosOsTasks(resposta.data.data);
 				})
 				.catch((error: any) => {
 					console.log(error);

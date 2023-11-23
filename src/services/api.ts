@@ -1,16 +1,17 @@
-import axios from 'axios'; 
-
+import axios from 'axios';
+ 
 export const Api = axios.create({
-    baseURL: "http://localhost:3001/"
+    baseURL: "http://localhost:8000/api/"
 })
-
+ 
 Api.defaults.headers.post['Content-Type'] = 'application/json'
 Api.defaults.headers.common['Accept'] = 'application/json'
-
+ 
 export const http = {
-	get: Api.get,
-	post: Api.post,
-	put: Api.put,
-	patch: Api.patch,
-	delete: Api.delete
+    get: Api.get,
+    post: Api.post,
+    put: Api.put,
+    patch: Api.patch,
+    delete: Api.delete
 }
+ 
