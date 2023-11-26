@@ -10,6 +10,7 @@ function AppRoutes() {
     <Router>
       <Routes>
         {/* GET ALL + DELETE */}
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
         {/* GET BY ID */}
           <Route path="/task/:id" element={<Form />} />

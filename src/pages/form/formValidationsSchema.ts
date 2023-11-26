@@ -1,6 +1,7 @@
 import * as yup from "yup";
 
 export type CreateTaskForm = {
+  id?: number;
   title: string;
   description: string;
   completed: boolean;

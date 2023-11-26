@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Content = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px 10px 5px;
+    padding: 20px 40px 10px 40px;
 `
 export const Tasks = styled.div`
     // flex-direction: row; 
